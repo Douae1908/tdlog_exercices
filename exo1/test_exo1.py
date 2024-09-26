@@ -1,11 +1,12 @@
-import unittest
+class Item:
+    def __init__(self, price, weight):
+        """Initialize the Item with price and weight."""
+        self.price = price
+        self.weight = weight
 
-from exo1 import Item
+# Example of code using the class
+i = Item(10, 20)
 
-
-class Exo1Test(unittest.TestCase):
-
-    def test_item_construction(self):
-        item = Item(10, 20)
-
-        self.assertEqual(20, item.weight)
+# Accessing the attributes
+print("Price:", i.price)   # Output: Price: 10
+print("Weight:", i.weight)  # Output: Weight: 20
